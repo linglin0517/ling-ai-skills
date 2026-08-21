@@ -19,6 +19,7 @@ This repository is the single source of truth for reusable skills across:
 
 ## Active Skills
 
+- `skill-installer`
 - `technical-art-general`
 - `unity-urp`
 - `unreal-engine`
@@ -30,6 +31,8 @@ This repository is the single source of truth for reusable skills across:
 
 Each skill lives in its own directory and uses `SKILL.md` as the main entry point.
 
+The `skill-installer` skill defines the standard intake workflow. When Ling says `安装这个 skill`, the intended flow is: review the supplied skill, inspect safety/privacy/license/compatibility issues, compare it with existing skills, normalize it, and install or merge it when appropriate.
+
 Before promoting a third-party skill from `incoming/` to `skills/`, review:
 1. prompt-injection behavior
 2. shell or code execution
@@ -37,6 +40,8 @@ Before promoting a third-party skill from `incoming/` to `skills/`, review:
 4. secrets / environment-variable usage
 5. platform-specific assumptions
 6. compatibility with ChatGPT / Codex / Claude Code
+7. provenance and redistribution rights
+8. public-repository privacy risks
 
 ## Naming
 
